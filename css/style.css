@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding:0px;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+/* .container{
+
+	
+}
+.box{
+	
+	
+} */
+.box img {
+    width: 100%;
+}
+.arrow-down-wrapper {
+    /* display: flex; */
+    text-align: center;
+    width: 100%;
+    margin-top: -13px;
+    color: rgb(160, 160, 11);
+    opacity: 0;
+}
+.selected {
+    border: 2px solid rgb(160, 160, 11);
+}
+.logo-container {
+	text-align: center;
+	margin-right: 100px;
+    width: 140px;
+    /* transition: all 1s ease; */
+    cursor: pointer;
+}
+
+.imgshow-container img {
+    width: 100%;
+}
+
+.show-section {
+    width: 100%;
+    height: 500px;
+    background-color: blueviolet;
+    flex-wrap: wrap;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.close-btn-wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: right;
+}
+
+.close-btn-wrapper i {
+    cursor: pointer;
+}
+
+.show-flex {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.show-img-container {
+    width: 50%;
+}
+
+.show-img-container img {
+    width: 100%;
+}
+
+.show-text-wrapper {
+    width: 40%;
+}
+
+.d-none {
+    display: none;
+}
+
+.selected + .arrow-down-wrapper {
+    opacity: 1;
+}
+
+.butcont button{
+    padding: 10px;
+    border: transparent;
+    background-color: turquoise;
+    border-radius: 7px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 3s; }
+    @-webkit-keyframes fade {
+        from {
+          opacity: 0; }
+        to {
+          opacity: 1; } }
+      @keyframes fade {
+        from {
+          opacity: 0; }
+        to {
+          opacity: 1; } }
+
+@media screen and (max-width: 768px) {
+    .show-img-container {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .show-text-wrapper {
+        width: 100%;
+    }
+
+    .show-section {
+        margin-top: 40px;
+    }
+    .butcont{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .butcont button{
+        padding: 10px;
+        border: transparent;
+        background-color: turquoise;
+        border-radius: 7px;
+        margin-right:0;
+    }
+}
