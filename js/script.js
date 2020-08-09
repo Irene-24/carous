@@ -6,7 +6,7 @@ const right = document.querySelector( '.chevron-right-wrapper' );
 const movingContainer = document.querySelector( '.images-container-flex' );
 const purple = document.querySelector( '.show-section' );
 let trans = 0;
-const close = document.querySelector( '.close-btn-wrapper i' );
+const closeBtn = document.querySelector( '.closeBtn-btn-wrapper i' );
 const show = Array.from( document.querySelectorAll( '.show-flex' ) );
 
 $( document ).ready( function ()
@@ -69,7 +69,7 @@ $( document ).ready( function ()
         item.classList.add( 'd-none' );
     } );
 
-    close.addEventListener( 'click', () =>
+    closeBtn.addEventListener( 'click', () =>
     {
         purple.style.display = 'none';
         const filtered = selectContainer.filter( item => item.classList.contains( 'selected' ) );
