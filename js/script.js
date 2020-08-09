@@ -21,6 +21,13 @@ $( document ).ready( function ()
         {
             $( '#autoWidth' ).removeClass( 'cS-hidden' );
         },
+        onBeforeSlide: function ()
+        {
+            const activeSlideDiv = document.querySelector( "#autoWidth .active div" );
+
+            activeSlideDiv.classList.remove( "selected" );
+        }
+        ,
         onAfterSlide: highlightSlides,
         responsive: [
             {
