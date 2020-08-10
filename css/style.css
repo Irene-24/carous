@@ -46,7 +46,7 @@ a{
 
 .show-section {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-color: blueviolet;
     flex-wrap: wrap;
     color: #ffffff;
